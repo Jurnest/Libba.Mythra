@@ -1,0 +1,374 @@
+Folder PATH listing
+Volume serial number is 9C28-DA4A
+C:.
+¦   .dockerignore
+¦   Libba.Mythra.sln
+¦   structer.txt
+¦   
++---src
+    +---Core
+    ¦   +---Application
+    ¦   ¦   +---Contract
+    ¦   ¦   ¦   +---Libba.Mythra.Core.Application.Contract
+    ¦   ¦   ¦       ¦   Libba.Mythra.Core.Application.Contract.csproj
+    ¦   ¦   ¦       ¦   
+    ¦   ¦   ¦       +---bin
+    ¦   ¦   ¦       ¦   +---Debug
+    ¦   ¦   ¦       ¦       +---net8.0
+    ¦   ¦   ¦       +---CQRS
+    ¦   ¦   ¦       ¦       ICommand.cs
+    ¦   ¦   ¦       ¦       IQuery.cs
+    ¦   ¦   ¦       ¦       
+    ¦   ¦   ¦       +---Extensions
+    ¦   ¦   ¦       ¦       Registration.cs
+    ¦   ¦   ¦       ¦       
+    ¦   ¦   ¦       +---Interfaces
+    ¦   ¦   ¦       ¦   ¦   IDbConnectionFactory.cs
+    ¦   ¦   ¦       ¦   ¦   IMythraMapper.cs
+    ¦   ¦   ¦       ¦   ¦   IUnitOfWork.cs
+    ¦   ¦   ¦       ¦   ¦   
+    ¦   ¦   ¦       ¦   +---Repositories
+    ¦   ¦   ¦       ¦       ¦   IReadRepository.cs
+    ¦   ¦   ¦       ¦       ¦   IWriteRepository.cs
+    ¦   ¦   ¦       ¦       ¦   
+    ¦   ¦   ¦       ¦       +---Auth
+    ¦   ¦   ¦       ¦           +---User
+    ¦   ¦   ¦       ¦                   IUserReadRepository.cs
+    ¦   ¦   ¦       ¦                   IUserWriteRepository.cs
+    ¦   ¦   ¦       ¦                   
+    ¦   ¦   ¦       +---obj
+    ¦   ¦   ¦       ¦   ¦   Libba.Mythra.Core.Application.Contract.csproj.nuget.dgspec.json
+    ¦   ¦   ¦       ¦   ¦   Libba.Mythra.Core.Application.Contract.csproj.nuget.g.props
+    ¦   ¦   ¦       ¦   ¦   Libba.Mythra.Core.Application.Contract.csproj.nuget.g.targets
+    ¦   ¦   ¦       ¦   ¦   project.assets.json
+    ¦   ¦   ¦       ¦   ¦   project.nuget.cache
+    ¦   ¦   ¦       ¦   ¦   
+    ¦   ¦   ¦       ¦   +---Debug
+    ¦   ¦   ¦       ¦       +---net8.0
+    ¦   ¦   ¦       ¦           ¦   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+    ¦   ¦   ¦       ¦           ¦   Libba.Mythra.Core.Application.Contract.AssemblyInfo.cs
+    ¦   ¦   ¦       ¦           ¦   Libba.Mythra.Core.Application.Contract.AssemblyInfoInputs.cache
+    ¦   ¦   ¦       ¦           ¦   Libba.Mythra.Core.Application.Contract.assets.cache
+    ¦   ¦   ¦       ¦           ¦   Libba.Mythra.Core.Application.Contract.csproj.AssemblyReference.cache
+    ¦   ¦   ¦       ¦           ¦   Libba.Mythra.Core.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+    ¦   ¦   ¦       ¦           ¦   Libba.Mythra.Core.Application.Contract.GlobalUsings.g.cs
+    ¦   ¦   ¦       ¦           ¦   
+    ¦   ¦   ¦       ¦           +---ref
+    ¦   ¦   ¦       ¦           +---refint
+    ¦   ¦   ¦       +---Services
+    ¦   ¦   ¦           +---Auth
+    ¦   ¦   ¦               +---Commands
+    ¦   ¦   ¦               ¦       CreateUserCommand.cs
+    ¦   ¦   ¦               ¦       
+    ¦   ¦   ¦               +---Dtos
+    ¦   ¦   ¦               ¦       UserDto.cs
+    ¦   ¦   ¦               ¦       
+    ¦   ¦   ¦               +---Queries
+    ¦   ¦   ¦                       GetAllUsersQuery.cs
+    ¦   ¦   ¦                       
+    ¦   ¦   +---Mapper
+    ¦   ¦   ¦   +---Libba.Mythra.Core.Application.Mapper
+    ¦   ¦   ¦       ¦   Libba.Mythra.Core.Application.Mapper.csproj
+    ¦   ¦   ¦       ¦   MythraMapper.cs
+    ¦   ¦   ¦       ¦   
+    ¦   ¦   ¦       +---bin
+    ¦   ¦   ¦       ¦   +---Debug
+    ¦   ¦   ¦       ¦       +---net8.0
+    ¦   ¦   ¦       +---Extensions
+    ¦   ¦   ¦       ¦       Registration.cs
+    ¦   ¦   ¦       ¦       
+    ¦   ¦   ¦       +---MappingProfiles
+    ¦   ¦   ¦       ¦   +---Auth
+    ¦   ¦   ¦       ¦           UserMappingProfile.cs
+    ¦   ¦   ¦       ¦           
+    ¦   ¦   ¦       +---obj
+    ¦   ¦   ¦           ¦   Libba.Mythra.Core.Application.Mapper.csproj.nuget.dgspec.json
+    ¦   ¦   ¦           ¦   Libba.Mythra.Core.Application.Mapper.csproj.nuget.g.props
+    ¦   ¦   ¦           ¦   Libba.Mythra.Core.Application.Mapper.csproj.nuget.g.targets
+    ¦   ¦   ¦           ¦   project.assets.json
+    ¦   ¦   ¦           ¦   project.nuget.cache
+    ¦   ¦   ¦           ¦   
+    ¦   ¦   ¦           +---Debug
+    ¦   ¦   ¦               +---net8.0
+    ¦   ¦   ¦                   ¦   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+    ¦   ¦   ¦                   ¦   Libba.Mythra.Core.Application.Mapper.AssemblyInfo.cs
+    ¦   ¦   ¦                   ¦   Libba.Mythra.Core.Application.Mapper.AssemblyInfoInputs.cache
+    ¦   ¦   ¦                   ¦   Libba.Mythra.Core.Application.Mapper.assets.cache
+    ¦   ¦   ¦                   ¦   Libba.Mythra.Core.Application.Mapper.csproj.AssemblyReference.cache
+    ¦   ¦   ¦                   ¦   Libba.Mythra.Core.Application.Mapper.GeneratedMSBuildEditorConfig.editorconfig
+    ¦   ¦   ¦                   ¦   Libba.Mythra.Core.Application.Mapper.GlobalUsings.g.cs
+    ¦   ¦   ¦                   ¦   
+    ¦   ¦   ¦                   +---ref
+    ¦   ¦   ¦                   +---refint
+    ¦   ¦   +---Service
+    ¦   ¦       +---Libba.Mythra.Core.Application.Service.Auth
+    ¦   ¦           ¦   Libba.Mythra.Core.Application.Service.Auth.csproj
+    ¦   ¦           ¦   
+    ¦   ¦           +---bin
+    ¦   ¦           ¦   +---Debug
+    ¦   ¦           ¦       +---net8.0
+    ¦   ¦           +---Extensions
+    ¦   ¦           ¦       Registration.cs
+    ¦   ¦           ¦       
+    ¦   ¦           +---Features
+    ¦   ¦           ¦   +---User
+    ¦   ¦           ¦       +---Commands
+    ¦   ¦           ¦       ¦       CreateUserCommandHandler.cs
+    ¦   ¦           ¦       ¦       CreateUserCommandValidator.cs
+    ¦   ¦           ¦       ¦       
+    ¦   ¦           ¦       +---Queries
+    ¦   ¦           ¦               GetAllUsersQueryHandler.cs
+    ¦   ¦           ¦               
+    ¦   ¦           +---obj
+    ¦   ¦               ¦   Libba.Mythra.Core.Application.Service.Auth.csproj.nuget.dgspec.json
+    ¦   ¦               ¦   Libba.Mythra.Core.Application.Service.Auth.csproj.nuget.g.props
+    ¦   ¦               ¦   Libba.Mythra.Core.Application.Service.Auth.csproj.nuget.g.targets
+    ¦   ¦               ¦   project.assets.json
+    ¦   ¦               ¦   project.nuget.cache
+    ¦   ¦               ¦   
+    ¦   ¦               +---Debug
+    ¦   ¦                   +---net8.0
+    ¦   ¦                       ¦   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+    ¦   ¦                       ¦   Libba.Mythra.Core.Application.Service.Auth.AssemblyInfo.cs
+    ¦   ¦                       ¦   Libba.Mythra.Core.Application.Service.Auth.AssemblyInfoInputs.cache
+    ¦   ¦                       ¦   Libba.Mythra.Core.Application.Service.Auth.assets.cache
+    ¦   ¦                       ¦   Libba.Mythra.Core.Application.Service.Auth.csproj.AssemblyReference.cache
+    ¦   ¦                       ¦   Libba.Mythra.Core.Application.Service.Auth.GeneratedMSBuildEditorConfig.editorconfig
+    ¦   ¦                       ¦   Libba.Mythra.Core.Application.Service.Auth.GlobalUsings.g.cs
+    ¦   ¦                       ¦   
+    ¦   ¦                       +---ref
+    ¦   ¦                       +---refint
+    ¦   +---Libba.Mythra.Core.Domain
+    ¦       ¦   Libba.Mythra.Core.Domain.csproj
+    ¦       ¦   
+    ¦       +---bin
+    ¦       ¦   +---Debug
+    ¦       ¦       +---net8.0
+    ¦       +---Common
+    ¦       ¦       ColumnNameAttribute.cs
+    ¦       ¦       TableNameAttribute.cs
+    ¦       ¦       
+    ¦       +---Entities
+    ¦       ¦   ¦   BaseEntity.cs
+    ¦       ¦   ¦   
+    ¦       ¦   +---Auth
+    ¦       ¦           UserEntity.cs
+    ¦       ¦           
+    ¦       +---obj
+    ¦           ¦   Libba.Mythra.Core.Domain.csproj.nuget.dgspec.json
+    ¦           ¦   Libba.Mythra.Core.Domain.csproj.nuget.g.props
+    ¦           ¦   Libba.Mythra.Core.Domain.csproj.nuget.g.targets
+    ¦           ¦   project.assets.json
+    ¦           ¦   project.nuget.cache
+    ¦           ¦   
+    ¦           +---Debug
+    ¦               +---net8.0
+    ¦                   ¦   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+    ¦                   ¦   Libba.Mythra.Core.Domain.AssemblyInfo.cs
+    ¦                   ¦   Libba.Mythra.Core.Domain.AssemblyInfoInputs.cache
+    ¦                   ¦   Libba.Mythra.Core.Domain.assets.cache
+    ¦                   ¦   Libba.Mythra.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+    ¦                   ¦   Libba.Mythra.Core.Domain.GlobalUsings.g.cs
+    ¦                   ¦   
+    ¦                   +---ref
+    ¦                   +---refint
+    +---Infrastructure
+    ¦   +---NLog
+    ¦   ¦   +---Libba.Mythra.Infrastructure.NLog
+    ¦   ¦       ¦   Libba.Mythra.Infrastructure.NLog.csproj
+    ¦   ¦       ¦   
+    ¦   ¦       +---bin
+    ¦   ¦       ¦   +---Debug
+    ¦   ¦       ¦       +---net8.0
+    ¦   ¦       +---Extensions
+    ¦   ¦       ¦       Registration.cs
+    ¦   ¦       ¦       
+    ¦   ¦       +---obj
+    ¦   ¦       ¦   ¦   Libba.Mythra.Infrastructure.NLog.csproj.nuget.dgspec.json
+    ¦   ¦       ¦   ¦   Libba.Mythra.Infrastructure.NLog.csproj.nuget.g.props
+    ¦   ¦       ¦   ¦   Libba.Mythra.Infrastructure.NLog.csproj.nuget.g.targets
+    ¦   ¦       ¦   ¦   project.assets.json
+    ¦   ¦       ¦   ¦   project.nuget.cache
+    ¦   ¦       ¦   ¦   
+    ¦   ¦       ¦   +---Debug
+    ¦   ¦       ¦       +---net8.0
+    ¦   ¦       ¦           ¦   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+    ¦   ¦       ¦           ¦   Libba.Mythra.Infrastructure.NLog.AssemblyInfo.cs
+    ¦   ¦       ¦           ¦   Libba.Mythra.Infrastructure.NLog.AssemblyInfoInputs.cache
+    ¦   ¦       ¦           ¦   Libba.Mythra.Infrastructure.NLog.assets.cache
+    ¦   ¦       ¦           ¦   Libba.Mythra.Infrastructure.NLog.csproj.AssemblyReference.cache
+    ¦   ¦       ¦           ¦   Libba.Mythra.Infrastructure.NLog.GeneratedMSBuildEditorConfig.editorconfig
+    ¦   ¦       ¦           ¦   Libba.Mythra.Infrastructure.NLog.GlobalUsings.g.cs
+    ¦   ¦       ¦           ¦   
+    ¦   ¦       ¦           +---ref
+    ¦   ¦       ¦           +---refint
+    ¦   ¦       +---Targets
+    ¦   ¦               LokiHttpTarget.cs
+    ¦   ¦               
+    ¦   +---Persistence
+    ¦       +---Dapper
+    ¦       ¦   +---Libba.Mythra.Infrastructure.Persistence.Dapper
+    ¦       ¦       ¦   Libba.Mythra.Infrastructure.Persistence.Dapper.csproj
+    ¦       ¦       ¦   
+    ¦       ¦       +---bin
+    ¦       ¦       ¦   +---Debug
+    ¦       ¦       ¦       +---net8.0
+    ¦       ¦       +---Connection
+    ¦       ¦       ¦       DbConnectionFactory .cs
+    ¦       ¦       ¦       
+    ¦       ¦       +---Extensions
+    ¦       ¦       ¦       Registration.cs
+    ¦       ¦       ¦       
+    ¦       ¦       +---Mapping
+    ¦       ¦       ¦       ColumnAttributeTypeMapper.cs
+    ¦       ¦       ¦       
+    ¦       ¦       +---obj
+    ¦       ¦       ¦   ¦   Libba.Mythra.Infrastructure.Persistence.Dapper.csproj.nuget.dgspec.json
+    ¦       ¦       ¦   ¦   Libba.Mythra.Infrastructure.Persistence.Dapper.csproj.nuget.g.props
+    ¦       ¦       ¦   ¦   Libba.Mythra.Infrastructure.Persistence.Dapper.csproj.nuget.g.targets
+    ¦       ¦       ¦   ¦   project.assets.json
+    ¦       ¦       ¦   ¦   project.nuget.cache
+    ¦       ¦       ¦   ¦   
+    ¦       ¦       ¦   +---Debug
+    ¦       ¦       ¦       +---net8.0
+    ¦       ¦       ¦           ¦   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+    ¦       ¦       ¦           ¦   Libba.Mythra.Infrastructure.Persistence.Dapper.AssemblyInfo.cs
+    ¦       ¦       ¦           ¦   Libba.Mythra.Infrastructure.Persistence.Dapper.AssemblyInfoInputs.cache
+    ¦       ¦       ¦           ¦   Libba.Mythra.Infrastructure.Persistence.Dapper.assets.cache
+    ¦       ¦       ¦           ¦   Libba.Mythra.Infrastructure.Persistence.Dapper.csproj.AssemblyReference.cache
+    ¦       ¦       ¦           ¦   Libba.Mythra.Infrastructure.Persistence.Dapper.GeneratedMSBuildEditorConfig.editorconfig
+    ¦       ¦       ¦           ¦   Libba.Mythra.Infrastructure.Persistence.Dapper.GlobalUsings.g.cs
+    ¦       ¦       ¦           ¦   
+    ¦       ¦       ¦           +---ref
+    ¦       ¦       ¦           +---refint
+    ¦       ¦       +---Repositories
+    ¦       ¦           ¦   ReadRepository.cs
+    ¦       ¦           ¦   
+    ¦       ¦           +---Auth
+    ¦       ¦                   UserReadRepository.cs
+    ¦       ¦                   
+    ¦       +---EfCore
+    ¦           +---Libba.Mythra.Infrastructure.Persistence.EfCore
+    ¦               ¦   Libba.Mythra.Infrastructure.Persistence.EfCore.csproj
+    ¦               ¦   UnitOfWork.cs
+    ¦               ¦   
+    ¦               +---bin
+    ¦               ¦   +---Debug
+    ¦               ¦       +---net8.0
+    ¦               +---Context
+    ¦               ¦       MythraDbContext.cs
+    ¦               ¦       
+    ¦               +---Extensions
+    ¦               ¦       Registration.cs
+    ¦               ¦       
+    ¦               +---obj
+    ¦               ¦   ¦   Libba.Mythra.Infrastructure.Persistence.EfCore.csproj.nuget.dgspec.json
+    ¦               ¦   ¦   Libba.Mythra.Infrastructure.Persistence.EfCore.csproj.nuget.g.props
+    ¦               ¦   ¦   Libba.Mythra.Infrastructure.Persistence.EfCore.csproj.nuget.g.targets
+    ¦               ¦   ¦   project.assets.json
+    ¦               ¦   ¦   project.nuget.cache
+    ¦               ¦   ¦   
+    ¦               ¦   +---Debug
+    ¦               ¦       +---net8.0
+    ¦               ¦           ¦   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+    ¦               ¦           ¦   Libba.Mythra.Infrastructure.Persistence.EfCore.AssemblyInfo.cs
+    ¦               ¦           ¦   Libba.Mythra.Infrastructure.Persistence.EfCore.AssemblyInfoInputs.cache
+    ¦               ¦           ¦   Libba.Mythra.Infrastructure.Persistence.EfCore.assets.cache
+    ¦               ¦           ¦   Libba.Mythra.Infrastructure.Persistence.EfCore.csproj.AssemblyReference.cache
+    ¦               ¦           ¦   Libba.Mythra.Infrastructure.Persistence.EfCore.GeneratedMSBuildEditorConfig.editorconfig
+    ¦               ¦           ¦   Libba.Mythra.Infrastructure.Persistence.EfCore.GlobalUsings.g.cs
+    ¦               ¦           ¦   
+    ¦               ¦           +---ref
+    ¦               ¦           +---refint
+    ¦               +---Repositories
+    ¦                   ¦   WriteRepository.cs
+    ¦                   ¦   
+    ¦                   +---Auth
+    ¦                           UserWriteRepository.cs
+    ¦                           
+    +---Presentation
+    ¦   +---Libba.Mythra.Presentation.WebAPI
+    ¦       ¦   appsettings.Development.json
+    ¦       ¦   appsettings.json
+    ¦       ¦   Dockerfile
+    ¦       ¦   Libba.Mythra.Presentation.WebAPI.csproj
+    ¦       ¦   Libba.Mythra.Presentation.WebAPI.csproj.user
+    ¦       ¦   Libba.Mythra.Presentation.WebAPI.http
+    ¦       ¦   Program.cs
+    ¦       ¦   
+    ¦       +---ActionFilters
+    ¦       ¦       ValidateModelActionFilter.cs
+    ¦       ¦       
+    ¦       +---bin
+    ¦       ¦   +---Debug
+    ¦       ¦       +---net8.0
+    ¦       +---Controllers
+    ¦       ¦   +---Auth
+    ¦       ¦       +---Read
+    ¦       ¦       ¦       UserController.cs
+    ¦       ¦       ¦       
+    ¦       ¦       +---Write
+    ¦       ¦               UserController.cs
+    ¦       ¦               
+    ¦       +---Middlewares
+    ¦       ¦       GlobalExceptionHandlingMiddleware.cs
+    ¦       ¦       
+    ¦       +---obj
+    ¦       ¦   ¦   Libba.Mythra.Presentation.WebAPI.csproj.nuget.dgspec.json
+    ¦       ¦   ¦   Libba.Mythra.Presentation.WebAPI.csproj.nuget.g.props
+    ¦       ¦   ¦   Libba.Mythra.Presentation.WebAPI.csproj.nuget.g.targets
+    ¦       ¦   ¦   project.assets.json
+    ¦       ¦   ¦   project.nuget.cache
+    ¦       ¦   ¦   
+    ¦       ¦   +---Container
+    ¦       ¦   ¦       ContainerDevelopmentMode.cache
+    ¦       ¦   ¦       ContainerId.cache
+    ¦       ¦   ¦       ContainerName.cache
+    ¦       ¦   ¦       ContainerRunContext.cache
+    ¦       ¦   ¦       
+    ¦       ¦   +---Debug
+    ¦       ¦       +---net8.0
+    ¦       ¦           ¦   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+    ¦       ¦           ¦   Libba.Mythra.Presentation.WebAPI.AssemblyInfo.cs
+    ¦       ¦           ¦   Libba.Mythra.Presentation.WebAPI.AssemblyInfoInputs.cache
+    ¦       ¦           ¦   Libba.Mythra.Presentation.WebAPI.assets.cache
+    ¦       ¦           ¦   Libba.Mythra.Presentation.WebAPI.csproj.AssemblyReference.cache
+    ¦       ¦           ¦   Libba.Mythra.Presentation.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+    ¦       ¦           ¦   Libba.Mythra.Presentation.WebAPI.GlobalUsings.g.cs
+    ¦       ¦           ¦   
+    ¦       ¦           +---ref
+    ¦       ¦           +---refint
+    ¦       ¦           +---staticwebassets
+    ¦       +---Properties
+    ¦               launchSettings.json
+    ¦               
+    +---Shared
+        +---Libba.Mythra.Shared
+            ¦   Libba.Mythra.Shared.csproj
+            ¦   
+            +---bin
+            ¦   +---Debug
+            ¦       +---net8.0
+            +---Helpers
+            ¦   +---Argon2
+            ¦           Argon2Helper.cs
+            ¦           
+            +---obj
+                ¦   Libba.Mythra.Shared.csproj.nuget.dgspec.json
+                ¦   Libba.Mythra.Shared.csproj.nuget.g.props
+                ¦   Libba.Mythra.Shared.csproj.nuget.g.targets
+                ¦   project.assets.json
+                ¦   project.nuget.cache
+                ¦   
+                +---Debug
+                    +---net8.0
+                        ¦   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+                        ¦   Libba.Mythra.Shared.AssemblyInfo.cs
+                        ¦   Libba.Mythra.Shared.AssemblyInfoInputs.cache
+                        ¦   Libba.Mythra.Shared.assets.cache
+                        ¦   Libba.Mythra.Shared.csproj.AssemblyReference.cache
+                        ¦   Libba.Mythra.Shared.GeneratedMSBuildEditorConfig.editorconfig
+                        ¦   Libba.Mythra.Shared.GlobalUsings.g.cs
+                        ¦   
+                        +---ref
+                        +---refint

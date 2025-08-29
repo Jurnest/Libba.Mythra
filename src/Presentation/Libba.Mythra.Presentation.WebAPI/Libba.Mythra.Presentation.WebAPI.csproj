@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>ec325e08-1fb1-4915-a464-1fdfa998ebf6</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..</DockerfileContext>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+		<PackageReference Include="NLog.Extensions.Logging" Version="6.0.3" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+		<PackageReference Include="NLog.Web.AspNetCore" Version="6.0.3" />
+		<PackageReference Include="NLog.Targets.Loki" Version="2.2.0" />
+		<PackageReference Include="NLog.Database" Version="6.0.3" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Application\Contract\Libba.Mythra.Core.Application.Contract\Libba.Mythra.Core.Application.Contract.csproj" />
+    <ProjectReference Include="..\..\Core\Application\Service\Libba.Mythra.Core.Application.Service.Auth\Libba.Mythra.Core.Application.Service.Auth.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\NLog\Libba.Mythra.Infrastructure.NLog\Libba.Mythra.Infrastructure.NLog.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Persistence\Dapper\Libba.Mythra.Infrastructure.Persistence.Dapper\Libba.Mythra.Infrastructure.Persistence.Dapper.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Persistence\EfCore\Libba.Mythra.Infrastructure.Persistence.EfCore\Libba.Mythra.Infrastructure.Persistence.EfCore.csproj" />
+  </ItemGroup>
+
+</Project>
