@@ -1,4 +1,4 @@
-using Libba.Mythra.Infrastructure.Persistence.Dapper.Extensions;
+using Libba.Mythra.Infrastructure.Persistence.RepoDb.Extensions;
 using Libba.Mythra.Core.Application.Contract.Extensions;
 using Libba.Mythra.Core.Application.Service.Auth.Extensions;
 using Libba.Mythra.Infrastructure.NLog.Extensions;
@@ -24,8 +24,10 @@ try
     builder.Services.AddEfCoreRegistration(builder.Configuration);
     builder.Services.AddNLogRegistration(builder.Configuration);
     builder.Services.AddApplicationContractRegistration();
-    builder.Services.AddDapperRegistration();
     builder.Services.AddMythraMapper();
+    builder.Services.AddReadDataAccess(settings =>
+    {
+    });
 
     builder.Services.AddAuthServiceRegistration();
 
