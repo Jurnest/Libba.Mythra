@@ -2,6 +2,7 @@
 using Libba.Mythra.Core.Application.Contract.Interfaces.Repositories;
 using Libba.Mythra.Core.Domain.Entities;
 using Libba.Mythra.Infrastructure.Persistence.EfCore.Context;
+using Libba.Mythra.Infrastructure.Persistence.EfCore.Repositories;
 using System.Collections;
 
 namespace Libba.Mythra.Infrastructure.Persistence.EfCore;

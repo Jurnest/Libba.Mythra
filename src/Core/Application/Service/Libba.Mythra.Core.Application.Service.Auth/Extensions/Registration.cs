@@ -11,6 +11,7 @@ public static class Registration
         var assm = Assembly.GetExecutingAssembly();
 
         services.AddValidatorsFromAssembly(assm);
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(assm));
 
         return services;
     }

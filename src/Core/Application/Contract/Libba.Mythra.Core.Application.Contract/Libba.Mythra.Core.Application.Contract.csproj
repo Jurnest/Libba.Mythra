@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Libba.Mythra.Core.Domain\Libba.Mythra.Core.Domain.csproj" />
-    <ProjectReference Include="..\..\Mapper\Libba.Mythra.Core.Application.Mapper\Libba.Mythra.Core.Application.Mapper.csproj" />
   </ItemGroup>
 
 </Project>

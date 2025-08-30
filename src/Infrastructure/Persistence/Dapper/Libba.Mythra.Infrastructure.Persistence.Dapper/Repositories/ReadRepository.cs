@@ -1,6 +1,6 @@
 ﻿using Dapper;
-using Libba.Mythra.Application.Interfaces.Repositories;
 using Libba.Mythra.Core.Application.Contract.Interfaces;
+using Libba.Mythra.Core.Application.Contract.Interfaces.Repositories;
 using Libba.Mythra.Core.Domain.Common;
 using Libba.Mythra.Core.Domain.Entities;
 using System.Data;
