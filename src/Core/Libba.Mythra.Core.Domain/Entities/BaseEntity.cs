@@ -1,4 +1,6 @@
-﻿namespace Libba.Mythra.Core.Domain.Entities;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Libba.Mythra.Core.Domain.Entities;
 
 /// <summary>
 /// Represents the base class for entities.
@@ -8,6 +10,7 @@ public abstract class BaseEntity
     /// <summary>
     /// Unique Key Value
     /// </summary>
+    [Key]
     public Guid Id { get; set; }
 
     /// <summary>

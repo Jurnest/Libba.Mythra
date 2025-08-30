@@ -4,8 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Libba.Mythra.Infrastructure.Persistence.EfCore.Configuration;
 
-public abstract class BaseConfiguration<TEntity> : IEntityTypeConfiguration<TEntity>
-    where TEntity : BaseEntity
+public abstract class BaseConfiguration<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : BaseEntity
 {
     public virtual void Configure(EntityTypeBuilder<TEntity> builder)
     {

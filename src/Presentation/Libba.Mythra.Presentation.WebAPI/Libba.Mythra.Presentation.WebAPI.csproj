@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Application\Contract\Libba.Mythra.Core.Application.Contract\Libba.Mythra.Core.Application.Contract.csproj" />
     <ProjectReference Include="..\..\Core\Application\Service\Libba.Mythra.Core.Application.Service.Auth\Libba.Mythra.Core.Application.Service.Auth.csproj" />
+    <ProjectReference Include="..\..\Core\Application\Service\ServiceBase\Libba.Mythra.Core.Application.Service.Base\Libba.Mythra.Core.Application.Service.Base.csproj" />
     <ProjectReference Include="..\..\Infrastructure\NLog\Libba.Mythra.Infrastructure.NLog\Libba.Mythra.Infrastructure.NLog.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Persistence\EfCore\Libba.Mythra.Infrastructure.Persistence.EfCore\Libba.Mythra.Infrastructure.Persistence.EfCore.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Persistence\RepoDb\Libba.Mythra.Infrastructure.Persistence.RepoDb\Libba.Mythra.Infrastructure.Persistence.RepoDb.csproj" />

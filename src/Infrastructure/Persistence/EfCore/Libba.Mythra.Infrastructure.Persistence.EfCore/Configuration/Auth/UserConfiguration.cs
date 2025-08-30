@@ -8,6 +8,8 @@ public class UserConfiguration : BaseConfiguration<UserEntity>
 {
     public override void Configure(EntityTypeBuilder<UserEntity> builder)
     {
+        base.Configure(builder);
+
         builder.ToTable("AUTH_USER");
 
         builder.Property(u => u.Name).HasColumnName("NAME").IsRequired().HasMaxLength(50);
@@ -16,5 +18,4 @@ public class UserConfiguration : BaseConfiguration<UserEntity>
         builder.Property(u => u.Password).HasColumnName("PASSWORD").IsRequired();
         builder.Property(u => u.IsActive).HasColumnName("IS_ACTIVE").IsRequired();
     }
-
 }

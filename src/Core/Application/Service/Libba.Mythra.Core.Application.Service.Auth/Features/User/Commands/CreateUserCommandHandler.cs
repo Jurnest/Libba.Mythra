@@ -1,4 +1,5 @@
 ﻿using Libba.Mythra.Core.Application.Contract.Interfaces;
+using Libba.Mythra.Core.Application.Contract.Interfaces.Repositories;
 using Libba.Mythra.Core.Application.Contract.Interfaces.Repositories.Auth.User;
 using Libba.Mythra.Core.Application.Contract.Services.Auth.Commands;
 using Libba.Mythra.Core.Domain.Entities.Auth;
@@ -10,13 +11,17 @@ namespace Libba.Mythra.Core.Application.Service.Auth.Features.User.Commands;
 public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Guid>
 {
     #region Dependencies
-    private readonly IUnitOfWork _unitOfWork;
+    // IUnitOfWork bağımlılığı tamamen kaldırıldı!
+    private readonly IWriteRepository<UserEntity> _userWriteRepository;
     private readonly IUserReadRepository _userReadRepository;
     private readonly IMythraMapper _mapper;
 
-    public CreateUserCommandHandler(IUnitOfWork unitOfWork, IUserReadRepository userReadRepository, IMythraMapper mapper)
+    public CreateUserCommandHandler(
+        IWriteRepository<UserEntity> userWriteRepository,
+        IUserReadRepository userReadRepository,
+        IMythraMapper mapper)
     {
-        _unitOfWork = unitOfWork;
+        _userWriteRepository = userWriteRepository;
         _userReadRepository = userReadRepository;
         _mapper = mapper;
     }
@@ -35,10 +40,8 @@ public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Guid>
         user.Password = Argon2Helper.HashPassword(request.Password);
         user.IsActive = false;
 
-        await _unitOfWork.GetWriteRepository<UserEntity>().AddAsync(user);
-        await _unitOfWork.SaveChangesAsync();
+        await _userWriteRepository.AddAsync(user);
 
         return user.Id;
     }
 }
-

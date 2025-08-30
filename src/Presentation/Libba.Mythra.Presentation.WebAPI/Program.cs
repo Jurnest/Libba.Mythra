@@ -1,6 +1,7 @@
 using Libba.Mythra.Infrastructure.Persistence.RepoDb.Extensions;
 using Libba.Mythra.Core.Application.Contract.Extensions;
 using Libba.Mythra.Core.Application.Service.Auth.Extensions;
+using Libba.Mythra.Core.Application.Service.Base.Extensions;
 using Libba.Mythra.Infrastructure.NLog.Extensions;
 using NLog.Web;
 using NLog;
@@ -28,6 +29,7 @@ try
     builder.Services.AddReadDataAccess(settings =>
     {
     });
+    builder.Services.AddApplicationServiceBaseRegistration();
 
     builder.Services.AddAuthServiceRegistration();
 

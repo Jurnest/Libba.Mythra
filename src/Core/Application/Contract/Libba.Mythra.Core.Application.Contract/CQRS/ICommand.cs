@@ -8,3 +8,4 @@ namespace Libba.Mythra.Core.Application.Contract.CQRS;
 /// </summary>
 public interface ICommand<out TResponse> : IRequest<TResponse> { }
 
+public interface ICommand : IRequest { }

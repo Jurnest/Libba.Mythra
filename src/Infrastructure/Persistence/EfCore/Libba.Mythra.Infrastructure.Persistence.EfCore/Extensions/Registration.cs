@@ -1,5 +1,7 @@
 ﻿using Libba.Mythra.Core.Application.Contract.Interfaces;
+using Libba.Mythra.Core.Application.Contract.Interfaces.Repositories;
 using Libba.Mythra.Infrastructure.Persistence.EfCore.Context;
+using Libba.Mythra.Infrastructure.Persistence.EfCore.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,6 +16,7 @@ public static class Registration
             options.UseNpgsql(configuration.GetConnectionString("PostgreSqlConnection")));
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
+        services.AddScoped(typeof(IWriteRepository<>), typeof(WriteRepository<>));
 
         services.Scan(scan => scan
             .FromCallingAssembly()

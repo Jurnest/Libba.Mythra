@@ -45,7 +45,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Libba.Mythra.Infrastructure
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RepoDb", "RepoDb", "{4E4B2012-A28A-46C5-B42B-828FA25B744D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libba.Mythra.Infrastructure.Persistence.RepoDb", "src\Infrastructure\Persistence\RepoDb\Libba.Mythra.Infrastructure.Persistence.RepoDb\Libba.Mythra.Infrastructure.Persistence.RepoDb.csproj", "{A52610E7-421D-4D9F-8126-15600F33115E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Libba.Mythra.Infrastructure.Persistence.RepoDb", "src\Infrastructure\Persistence\RepoDb\Libba.Mythra.Infrastructure.Persistence.RepoDb\Libba.Mythra.Infrastructure.Persistence.RepoDb.csproj", "{A52610E7-421D-4D9F-8126-15600F33115E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceBase", "ServiceBase", "{C0F5B74B-9D5D-4820-833A-5D91C8EDE17E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libba.Mythra.Core.Application.Service.Base", "src\Core\Application\Service\ServiceBase\Libba.Mythra.Core.Application.Service.Base\Libba.Mythra.Core.Application.Service.Base.csproj", "{175C289C-5031-45FD-B0B9-6A5E09DCB046}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +93,10 @@ Global
 		{A52610E7-421D-4D9F-8126-15600F33115E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A52610E7-421D-4D9F-8126-15600F33115E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A52610E7-421D-4D9F-8126-15600F33115E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{175C289C-5031-45FD-B0B9-6A5E09DCB046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175C289C-5031-45FD-B0B9-6A5E09DCB046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175C289C-5031-45FD-B0B9-6A5E09DCB046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175C289C-5031-45FD-B0B9-6A5E09DCB046}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -115,6 +123,8 @@ Global
 		{43C25A4B-E7CD-47C3-AEF0-6F101FAFF237} = {08EF5207-21F1-4E72-BDE4-1453BAC91417}
 		{4E4B2012-A28A-46C5-B42B-828FA25B744D} = {BA53D6A5-CE3C-4231-BAF7-9C5C22C6ACB8}
 		{A52610E7-421D-4D9F-8126-15600F33115E} = {4E4B2012-A28A-46C5-B42B-828FA25B744D}
+		{C0F5B74B-9D5D-4820-833A-5D91C8EDE17E} = {C2683010-1D37-4820-88FF-174C4DF7B819}
+		{175C289C-5031-45FD-B0B9-6A5E09DCB046} = {C0F5B74B-9D5D-4820-833A-5D91C8EDE17E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7116872-9F57-4BE2-92A8-8468E2A76297}
