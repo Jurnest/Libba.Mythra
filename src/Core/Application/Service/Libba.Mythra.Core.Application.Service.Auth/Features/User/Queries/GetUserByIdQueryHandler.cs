@@ -8,14 +8,14 @@ using Microsoft.Extensions.Logging;
 
 namespace Libba.Mythra.Core.Application.Service.Auth.Features.User.Queries;
 
-public class GetAllUsersQueryHandler : IRequestHandler<GetAllUsersQuery, IEnumerable<UserDto>>
+public class GetUserByIdQueryHandler : IRequestHandler<GetUserByIdQuery, UserDto>
 {
     #region Dependencies
-    private readonly ILogger<GetAllUsersQueryHandler> _logger;
+    private readonly ILogger<GetUserByIdQueryHandler> _logger;
     private readonly IUserReadRepository _userReadRepository;
     private readonly IMythraMapper _mapper;
 
-    public GetAllUsersQueryHandler(IUserReadRepository userReadRepository, IMythraMapper mapper, ILogger<GetAllUsersQueryHandler> logger)
+    public GetUserByIdQueryHandler(IUserReadRepository userReadRepository, IMythraMapper mapper, ILogger<GetUserByIdQueryHandler> logger)
     {
         _userReadRepository = userReadRepository;
         _mapper = mapper;
@@ -23,10 +23,10 @@ public class GetAllUsersQueryHandler : IRequestHandler<GetAllUsersQuery, IEnumer
     }
     #endregion
 
-    public async Task<IEnumerable<UserDto>> Handle(GetAllUsersQuery request, CancellationToken cancellationToken)
+    public async Task<UserDto> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
     {
-        var datas = await _userReadRepository.GetAllAsync();
-        var dal = _mapper.Map<IEnumerable<UserDto>>(datas);
+        var data = await _userReadRepository.GetByIdAsync(request.Id);
+        var dal = _mapper.Map<UserDto>(data);
 
         return dal;
     }

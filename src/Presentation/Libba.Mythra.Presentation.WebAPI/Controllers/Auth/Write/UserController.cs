@@ -16,11 +16,23 @@ public partial class UserController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateUser([FromBody] CreateUserCommand command)
+    public async Task<IActionResult> Create([FromBody] CreateUserCommand command)
     {
         var userId = await _mediator.Send(command);
-        // TODO: GetUserById endpoint'i oluşturulduğunda CreatedAtAction kullanmak daha doğru olur.
         return Ok(new { UserId = userId });
     }
 
+    [HttpPost]
+    public async Task<IActionResult> Update([FromBody] UpdateUserCommand command)
+    {
+        await _mediator.Send(command);
+        return Ok();
+    }
+
+    [HttpDelete]
+    public async Task<IActionResult> Delete([FromBody] DeleteUserCommand command)
+    {
+        await _mediator.Send(command);
+        return Ok();
+    }
 }

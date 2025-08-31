@@ -18,5 +18,28 @@
     <ProjectReference Include="..\..\Contract\Libba.Mythra.Core.Application.Contract\Libba.Mythra.Core.Application.Contract.csproj" />
     <ProjectReference Include="..\..\Mapper\Libba.Mythra.Core.Application.Mapper\Libba.Mythra.Core.Application.Mapper.csproj" />
   </ItemGroup>
+	
+  <ItemGroup>
+    <Folder Include="Features\EndpointRole\Commands\Create\" />
+    <Folder Include="Features\EndpointRole\Commands\Delete\" />
+    <Folder Include="Features\EndpointRole\Commands\Update\" />
+    <Folder Include="Features\EndpointRole\Queries\" />
+    <Folder Include="Features\RoleGroup\Commands\Create\" />
+    <Folder Include="Features\RoleGroup\Commands\Delete\" />
+    <Folder Include="Features\RoleGroup\Commands\Update\" />
+    <Folder Include="Features\RoleGroup\Queries\" />
+    <Folder Include="Features\RoleRoleGroup\Commands\Create\" />
+    <Folder Include="Features\RoleRoleGroup\Commands\Delete\" />
+    <Folder Include="Features\RoleRoleGroup\Commands\Update\" />
+    <Folder Include="Features\RoleRoleGroup\Queries\" />
+    <Folder Include="Features\Role\Commands\Create\" />
+    <Folder Include="Features\Role\Commands\Delete\" />
+    <Folder Include="Features\Role\Commands\Update\" />
+    <Folder Include="Features\Role\Queries\" />
+    <Folder Include="Features\UserRoleGroup\Commands\Create\" />
+    <Folder Include="Features\UserRoleGroup\Commands\Delete\" />
+    <Folder Include="Features\UserRoleGroup\Commands\Update\" />
+    <Folder Include="Features\UserRoleGroup\Queries\" />
+  </ItemGroup>
 
 </Project>

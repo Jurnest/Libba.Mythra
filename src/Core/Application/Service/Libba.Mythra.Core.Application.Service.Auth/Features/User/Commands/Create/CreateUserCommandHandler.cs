@@ -11,7 +11,6 @@ namespace Libba.Mythra.Core.Application.Service.Auth.Features.User.Commands.Crea
 public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Guid>
 {
     #region Dependencies
-    // IUnitOfWork bağımlılığı tamamen kaldırıldı!
     private readonly IUserWriteRepository _userWriteRepository;
     private readonly IUserReadRepository _userReadRepository;
     private readonly IMythraMapper _mapper;
@@ -35,13 +34,13 @@ public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Guid>
             throw new InvalidOperationException($"Email address '{request.Email}' is already in use.");
         }
 
-        UserEntity user = _mapper.Map<UserEntity>(request);
+        var dal = _mapper.Map<UserEntity>(request);
 
-        user.Password = Argon2Helper.HashPassword(request.Password);
-        user.IsActive = false;
+        dal.Password = Argon2Helper.HashPassword(request.Password);
+        dal.IsActive = false;
 
-        await _userWriteRepository.AddAsync(user);
+        await _userWriteRepository.AddAsync(dal);
 
-        return user.Id;
+        return dal.Id;
     }
 }

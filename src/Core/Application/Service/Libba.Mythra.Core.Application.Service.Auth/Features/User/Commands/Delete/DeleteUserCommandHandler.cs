@@ -10,7 +10,6 @@ namespace Libba.Mythra.Core.Application.Service.Auth.Features.User.Commands.Dele
 public class DeleteUserCommandHandler : IRequestHandler<DeleteUserCommand, bool>
 {
     #region Dependencies
-    // IUnitOfWork bağımlılığı tamamen kaldırıldı!
     private readonly IUserWriteRepository _userWriteRepository;
     private readonly IUserReadRepository _userReadRepository;
     private readonly IMythraMapper _mapper;
@@ -28,14 +27,14 @@ public class DeleteUserCommandHandler : IRequestHandler<DeleteUserCommand, bool>
 
     public async Task<bool> Handle(DeleteUserCommand request, CancellationToken cancellationToken)
     {
-        UserEntity? userToDelete = await _userReadRepository.GetByIdAsync(request.Id);
+        var dal = await _userReadRepository.GetByIdAsync(request.Id);
 
-        if (userToDelete is null)
+        if (dal is null)
         {
             return false;
         }
 
-        _userWriteRepository.Delete(userToDelete);
+        _userWriteRepository.Delete(dal);
 
         return true;
     }
