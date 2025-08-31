@@ -1,7 +1,7 @@
 ﻿using Libba.Mythra.Core.Application.Contract.CQRS;
-using Libba.Mythra.Core.Application.Contract.Services.Auth.Dtos;
+using Libba.Mythra.Core.Application.Contract.Services.Auth.User.Dtos;
 
-namespace Libba.Mythra.Core.Application.Contract.Services.Auth.Queries;
+namespace Libba.Mythra.Core.Application.Contract.Services.Auth.User.Queries;
 
 /// <summary>
 /// Represents the query to retrieve all users.

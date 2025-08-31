@@ -1,7 +1,7 @@
 ﻿using Libba.Mythra.Core.Application.Contract.Interfaces;
 using Libba.Mythra.Core.Application.Contract.Interfaces.Repositories.Auth.User;
-using Libba.Mythra.Core.Application.Contract.Services.Auth.Dtos;
-using Libba.Mythra.Core.Application.Contract.Services.Auth.Queries;
+using Libba.Mythra.Core.Application.Contract.Services.Auth.User.Dtos;
+using Libba.Mythra.Core.Application.Contract.Services.Auth.User.Queries;
 using Libba.Mythra.Core.Domain.Entities.Auth;
 using MediatR;
 using Microsoft.Extensions.Logging;

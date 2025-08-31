@@ -1,6 +1,6 @@
 ﻿using Libba.Mythra.Core.Application.Contract.CQRS;
 
-namespace Libba.Mythra.Core.Application.Contract.Services.Auth.Commands;
+namespace Libba.Mythra.Core.Application.Contract.Services.Auth.User.Commands;
 
 /// <summary>
 /// Represents the command with data for creating a new user.

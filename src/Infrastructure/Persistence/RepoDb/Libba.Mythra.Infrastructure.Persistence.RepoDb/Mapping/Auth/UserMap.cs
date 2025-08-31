@@ -11,10 +11,12 @@ public class UserMap : BaseEntityMap<UserEntity>
     {
         base.Configure();
 
-        FluentMapper.Entity<UserEntity>().Column(u => u.Name, "NAME")
-                                      .Column(u => u.Surname, "SURNAME")
-                                      .Column(u => u.Email, "EMAIL")
-                                      .Column(u => u.Password, "PASSWORD")
-                                      .Column(u => u.IsActive, "IS_ACTIVE");
+        EntityMapFluentDefinition<UserEntity> mapper = FluentMapper.Entity<UserEntity>();
+
+        mapper.Column(u => u.Name, "NAME");
+        mapper.Column(u => u.Surname, "SURNAME");
+        mapper.Column(u => u.Email, "EMAIL");
+        mapper.Column(u => u.Password, "PASSWORD");
+        mapper.Column(u => u.IsActive, "IS_ACTIVE");
     }
 }

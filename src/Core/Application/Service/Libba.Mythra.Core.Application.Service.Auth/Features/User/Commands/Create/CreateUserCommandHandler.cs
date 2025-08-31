@@ -1,23 +1,23 @@
 ﻿using Libba.Mythra.Core.Application.Contract.Interfaces;
 using Libba.Mythra.Core.Application.Contract.Interfaces.Repositories;
 using Libba.Mythra.Core.Application.Contract.Interfaces.Repositories.Auth.User;
-using Libba.Mythra.Core.Application.Contract.Services.Auth.Commands;
+using Libba.Mythra.Core.Application.Contract.Services.Auth.User.Commands;
 using Libba.Mythra.Core.Domain.Entities.Auth;
 using Libba.Mythra.Shared.Helpers.Argon2;
 using MediatR;
 
-namespace Libba.Mythra.Core.Application.Service.Auth.Features.User.Commands;
+namespace Libba.Mythra.Core.Application.Service.Auth.Features.User.Commands.Create;
 
 public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Guid>
 {
     #region Dependencies
     // IUnitOfWork bağımlılığı tamamen kaldırıldı!
-    private readonly IWriteRepository<UserEntity> _userWriteRepository;
+    private readonly IUserWriteRepository _userWriteRepository;
     private readonly IUserReadRepository _userReadRepository;
     private readonly IMythraMapper _mapper;
 
     public CreateUserCommandHandler(
-        IWriteRepository<UserEntity> userWriteRepository,
+        IUserWriteRepository userWriteRepository,
         IUserReadRepository userReadRepository,
         IMythraMapper mapper)
     {

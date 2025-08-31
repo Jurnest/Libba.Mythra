@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
-using Libba.Mythra.Core.Application.Contract.Services.Auth.Commands;
+using Libba.Mythra.Core.Application.Contract.Services.Auth.User.Commands;
 
-namespace Libba.Mythra.Core.Application.Service.Auth.Features.User.Commands;
+namespace Libba.Mythra.Core.Application.Service.Auth.Features.User.Commands.Create;
 
 public class CreateUserCommandValidator : AbstractValidator<CreateUserCommand>
 {

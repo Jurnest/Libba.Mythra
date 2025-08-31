@@ -17,5 +17,7 @@ public class UserConfiguration : BaseConfiguration<UserEntity>
         builder.Property(u => u.Email).HasColumnName("EMAIL").IsRequired().HasMaxLength(100);
         builder.Property(u => u.Password).HasColumnName("PASSWORD").IsRequired();
         builder.Property(u => u.IsActive).HasColumnName("IS_ACTIVE").IsRequired();
+
+        builder.HasMany(u => u.UserRoleGroups).WithOne(urg => urg.User).HasForeignKey(urg => urg.UserId);
     }
 }

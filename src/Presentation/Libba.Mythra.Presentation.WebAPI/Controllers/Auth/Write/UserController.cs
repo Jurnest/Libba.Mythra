@@ -1,4 +1,4 @@
-﻿using Libba.Mythra.Core.Application.Contract.Services.Auth.Commands;
+﻿using Libba.Mythra.Core.Application.Contract.Services.Auth.User.Commands;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

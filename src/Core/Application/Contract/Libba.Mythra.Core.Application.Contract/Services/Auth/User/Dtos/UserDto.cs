@@ -1,4 +1,4 @@
-﻿namespace Libba.Mythra.Core.Application.Contract.Services.Auth.Dtos;
+﻿namespace Libba.Mythra.Core.Application.Contract.Services.Auth.User.Dtos;
 
 public class UserDto
 {

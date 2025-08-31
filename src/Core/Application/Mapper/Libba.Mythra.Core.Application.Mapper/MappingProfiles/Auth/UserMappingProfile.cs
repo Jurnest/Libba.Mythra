@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Libba.Mythra.Core.Application.Contract.Services.Auth.Commands;
-using Libba.Mythra.Core.Application.Contract.Services.Auth.Dtos;
+using Libba.Mythra.Core.Application.Contract.Services.Auth.User.Commands;
+using Libba.Mythra.Core.Application.Contract.Services.Auth.User.Dtos;
 using Libba.Mythra.Core.Domain.Entities.Auth;
 
 namespace Libba.Mythra.Core.Application.Mapper.MappingProfiles.Auth;
