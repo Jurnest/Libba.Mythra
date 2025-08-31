@@ -44,7 +44,7 @@ try
     var app = builder.Build();
 
 
-    #if !DEBUG
+    #if DEBUG
         app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
     #endif
 

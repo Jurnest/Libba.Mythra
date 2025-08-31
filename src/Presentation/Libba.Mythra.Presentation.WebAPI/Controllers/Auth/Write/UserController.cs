@@ -16,13 +16,15 @@ public partial class UserController : ControllerBase
     }
 
     [HttpPost]
+    [Route("Insert")]
     public async Task<IActionResult> Create([FromBody] CreateUserCommand command)
     {
         var userId = await _mediator.Send(command);
         return Ok(new { UserId = userId });
     }
 
-    [HttpPost]
+    [HttpPut]
+    [Route("Update")]
     public async Task<IActionResult> Update([FromBody] UpdateUserCommand command)
     {
         await _mediator.Send(command);
@@ -30,8 +32,10 @@ public partial class UserController : ControllerBase
     }
 
     [HttpDelete]
-    public async Task<IActionResult> Delete([FromBody] DeleteUserCommand command)
+    [Route("Delete/{id:guid}")]
+    public async Task<IActionResult> Delete(Guid id)
     {
+        var command = new DeleteUserCommand(id);
         await _mediator.Send(command);
         return Ok();
     }

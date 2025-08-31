@@ -10,6 +10,7 @@ public class UserMappingProfile : Profile
     public UserMappingProfile()
     {
         CreateMap<CreateUserCommand, UserEntity>();
+        CreateMap<UpdateUserCommand, UserEntity>();
         CreateMap<UserEntity, UserDto>();
     }
 }
